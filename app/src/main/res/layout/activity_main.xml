@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abilix.walktunner.MainActivity">
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stop"
+        android:layout_alignLeft="@+id/stop"
+        android:layout_alignStart="@+id/stop"
+        android:layout_marginBottom="27dp"
+        android:text="前进"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/backward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stop"
+        android:layout_alignStart="@+id/stop"
+        android:layout_below="@+id/stop"
+        android:layout_marginTop="26dp"
+        android:text="后退"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backward"
+        android:layout_centerHorizontal="true"
+        android:text="ip"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="停止"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stop"
+        android:layout_alignBottom="@+id/stop"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/stop"
+        android:layout_toRightOf="@+id/stop"
+        android:text="左移"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_toLeftOf="@+id/stop"
+        android:layout_toStartOf="@+id/stop"
+        android:text="右移"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/right_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/right"
+        android:layout_alignRight="@+id/right"
+        android:layout_alignTop="@+id/forward"
+        android:text="右前"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/left_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/left"
+        android:layout_alignStart="@+id/left"
+        android:layout_alignTop="@+id/forward"
+        android:text="左前"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/right_backward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/right"
+        android:layout_alignRight="@+id/right"
+        android:layout_alignTop="@+id/backward"
+        android:text="右后"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/left"
+        android:layout_alignRight="@+id/left"
+        android:layout_alignTop="@+id/backward"
+        android:text="退出"
+        android:textSize="30sp" />
+
+</RelativeLayout>
